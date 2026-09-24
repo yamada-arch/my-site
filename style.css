@@ -1,0 +1,223 @@
+/* =========================================================
+   SAKURA COFFEE
+   ※ このCSSには、スマホ対応（メディアクエリ）がまだ入っていません。
+      実習STEP4で、自分の手で追記します。
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Meiryo", sans-serif;
+  color: #2b2b2b;
+  line-height: 1.8;
+  background: #fffdfa;
+}
+
+/* 中央に寄せるための枠
+   ── 幅を px で決め打ちしているので、狭い画面でははみ出します */
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- ヘッダー ---------- */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #ece5dc;
+  padding: 18px 0;
+}
+
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  color: #6b4423;
+}
+
+.nav a {
+  margin-left: 28px;
+  color: #6b4423;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- ヒーロー（一番上の大きな画像） ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 画像の幅を px で固定しているので、スマホでは画面からはみ出します */
+.hero img {
+  width: 1400px;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-sub {
+  margin: 0 0 8px;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.4;
+}
+
+/* ---------- 共通のセクション ---------- */
+.section {
+  padding: 64px 0;
+}
+
+.section-gray {
+  background: #f7f2ec;
+}
+
+.section-title {
+  font-size: 26px;
+  color: #6b4423;
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e0d3c4;
+}
+
+.lead {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ---------- メニューのカード ---------- */
+/* 横に3つ並べています。狭い画面でも3列のままなので、つぶれます */
+.cards {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  width: 340px;
+  background: #ffffff;
+  border: 1px solid #ece5dc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* カード内の画像も px 固定です */
+.card img {
+  width: 300px;
+  border-radius: 6px;
+  display: block;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 14px 0 4px;
+  color: #6b4423;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.price {
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #c0651e;
+}
+
+/* ---------- アクセスの表 ---------- */
+.info-table {
+  width: 900px;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #e0d3c4;
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.info-table th {
+  width: 160px;
+  background: #f7f2ec;
+  color: #6b4423;
+  white-space: nowrap;
+}
+
+/* ---------- カウンター ---------- */
+.counter-box {
+  margin-top: 32px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #ece5dc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.counter-box p {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.counter {
+  font-size: 32px !important;
+  font-weight: bold;
+  color: #6b4423;
+}
+
+.btn {
+  margin-top: 8px;
+  padding: 12px 28px;
+  font-size: 15px;
+  color: #ffffff;
+  background: #6b4423;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #8a5a2f;
+}
+
+/* ---------- フッター ---------- */
+.footer {
+  margin-top: 40px;
+  padding: 28px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #8a7f74;
+  border-top: 1px solid #ece5dc;
+}
+
+
+/* =========================================================
+   【実習STEP4】ここから下に、スマホ用の指示を追記します
+   ---------------------------------------------------------
+   ヒント：@media (max-width: 600px) { ... } の形で書きます
+   ========================================================= */

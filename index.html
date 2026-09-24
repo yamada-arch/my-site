@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SAKURA COFFEE｜街かどの小さな焙煎所</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <h1 class="logo">SAKURA COFFEE</h1>
+      <nav class="nav">
+        <a href="#about">お店について</a>
+        <a href="#menu">メニュー</a>
+        <a href="#access">アクセス</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="https://picsum.photos/id/431/1400/700" alt="焙煎したてのコーヒー豆">
+    <div class="hero-text">
+      <p class="hero-sub">街かどの小さな焙煎所</p>
+      <h2 class="hero-title">今日も、一杯ぶんの<br>しあわせを。</h2>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="inner">
+      <h2 class="section-title">お店について</h2>
+      <p class="lead">
+        2018年、商店街の一角にオープンした小さな焙煎所です。
+        毎朝その日ぶんだけを焙煎し、豆の個性が立ちあがる一杯をお出ししています。
+        テイクアウトのお客さまにも、店内でゆっくり過ごすお客さまにも、
+        同じ丁寧さでお届けすることを大切にしています。
+      </p>
+    </div>
+  </section>
+
+  <section id="menu" class="section section-gray">
+    <div class="inner">
+      <h2 class="section-title">メニュー</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="https://picsum.photos/id/225/600/400" alt="ドリップコーヒー">
+          <h3>ドリップコーヒー</h3>
+          <p class="price">¥520</p>
+          <p>その日のおすすめの豆を、1杯ずつ丁寧に落とします。浅煎りから深煎りまで、日替わりで3種類ご用意。</p>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/id/312/600/400" alt="カフェラテ">
+          <h3>カフェラテ</h3>
+          <p class="price">¥580</p>
+          <p>深煎りのエスプレッソに、しっかり泡立てたミルクを。甘さを足さなくても、やさしい味わいです。</p>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/id/292/600/400" alt="自家焙煎の豆">
+          <h3>自家焙煎の豆（200g）</h3>
+          <p class="price">¥1,280</p>
+          <p>ご自宅用に。お好みの挽き方でお渡しします。挽かずに豆のままお持ち帰りいただくのもおすすめです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="access" class="section">
+    <div class="inner">
+      <h2 class="section-title">アクセス</h2>
+
+      <table class="info-table">
+        <tr>
+          <th>住所</th>
+          <td>〒000-0000　サンプル県サンプル市さくら商店街 1-2-3</td>
+        </tr>
+        <tr>
+          <th>営業時間</th>
+          <td>8:00 - 18:00（ラストオーダー 17:30）</td>
+        </tr>
+        <tr>
+          <th>定休日</th>
+          <td>毎週水曜日、第3火曜日</td>
+        </tr>
+        <tr>
+          <th>電話番号</th>
+          <td>000-0000-0000</td>
+        </tr>
+      </table>
+
+      <div class="counter-box">
+        <p>ページを見てくださった回数（このページを開いてから）</p>
+        <p class="counter"><span id="count">0</span> 回</p>
+        <button id="countBtn" class="btn">カウントする</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 SAKURA COFFEE</p>
+  </footer>
+
+  <script>
+    // 「カウントする」ボタンを押すと、数字が1ずつ増える
+    var count = 0;
+
+    var btn = document.getElementById("countBtn");
+    var view = document.getElementById("counter");
+
+    // ページを開いたときに、表示を 0 にしておく
+    view.textContent = count;
+
+    btn.addEventListener("click", function () {
+      count = count + 1;
+      view.textContent = count;
+    });
+  </script>
+
+</body>
+</html>
